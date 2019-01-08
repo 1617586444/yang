@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>小米账号-登录</title>
+		<link rel="SHORTCUT ICON" href="images/milogo.ico"/>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<style type="text/css">
+			body,html{
+				background: #f5f5f5;
+			}
+			.mian_login{
+				width: 854px;
+				height: 620px;
+				background: #fff;
+				margin:10px auto;
+				overflow: hidden;
+			}
+			.bg{
+				height:50px;
+				width: 50px;
+				background:url(images/login/sprite_login.gif) no-repeat;
+				float: right;
+				margin:10px 10px 0 0;
+			}
+			.header_title{
+				height: 109px;
+				margin-top: 50px;
+				text-align: center;
+			}
+			.header_title>dl>dd{
+				font-size:30px;
+				margin:0 auto;
+				margin-top:22px;
+			}
+			.header_title>dl>dt{
+				width:49px;
+				height:49PX;
+				margin:0 auto;
+			}
+			.inp{
+				height:115px;
+				text-align: center;
+				margin-top: 44px;
+			}
+			input{
+				height:50px;
+				width:358px;
+				outline: none;
+				border: 0;
+				border:1px solid #ccc;
+				border-radius:5px;
+			}
+			#pwd{
+				margin-top: 16px;
+			}
+			#pwd,#user{
+				padding-left:16px;
+				box-sizing: border-box;
+			}
+			input::-webkit-input-placeholder{
+				color: #969696;
+			}
+			.btn{
+				width:358px;
+				margin:24px auto;
+			}
+			#btn{
+				background: #ef5b00;
+				border: 0;
+				color: #fff;
+			}
+			.login_txt{
+				width:358px;
+				margin:14px auto;
+				font-size:12px;
+				height:50px;
+				font-weight:900;
+				border-bottom:1px solid #efefef;
+			}
+			.phone_login{
+				color: #ef5b00;
+			}
+			.phone_login{
+				float: left;
+			}
+			.lj_register,.wj_pwd,.sp{
+				float: right;
+				color: #757575;
+			}
+			.sp{
+				margin:0 3px;
+				color: #ffede5;
+			}
+			.type_txt{
+				top:43px;
+				left:28px;
+				position: relative;
+				background: #fff;
+				color: #b0b0b0;
+				font-size: 14px;
+			}
+			.foot{
+				height:110px;
+				width: 854px;
+				margin:0 auto;
+				text-align: center;
+				padding-top:20px;
+				box-sizing: border-box;
+				font-size:14px;
+			}
+			.foot p{
+				 line-height: 33px;;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="mian_login">
+			<div class="bg"></div>
+			<div class="header_title">
+				<dl>
+					<dt><img src="images/login/milogo.ico"/></dt>
+					<dd>小米帐号登录</dd>
+				</dl>
+			</div>
+			<div class="inp">
+				<input type="text" name="name" placeholder="邮箱/手机号码/小米ID" id="user"/><br />
+				<input type="password" name="pwd" placeholder="密码" id="pwd"/>
+			</div>
+			<p class="btn"><input type="submit" value="登录" id="btn"/></p>
+			<p class="login_txt">
+				<a href="register.html" class="phone_login">手机短信登录/注册</a>
+				<a href="register.html" class="lj_register">忘记密码？</a>
+				<span class="sp">|</span>
+				<a href="register.html" class="wj_pwd">立即注册</a>
+				<span class="type_txt">其他方式登录</span>
+			</p>
+		</div>
+		<div class="foot">
+			<p>简体| 繁体| English| 常见问题| 隐私政策</p>
+			<p>小米公司版权所有-京ICP备10046444-京公网安备11010802020134号-京ICP证110507号</p>
+		</div>
+	<script src="../../jquery-1.9.1.min.js"></script>
+	<script type="text/javascript">
+		
+		
+		
+		
+		
+		
+	</script>
+	</body>
+</html>

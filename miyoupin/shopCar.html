@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车-小米有品</title>
+		<link rel="SHORTCUT ICON" href="images/icon.ico"/>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+		<style type="text/css">
+			
+.content{
+	width:1080px;
+	margin:0 auto;
+}
+.warpper-top{
+	height:48px;
+	width:100%;
+	background: #333;
+}
+.top{
+	height:48px;
+}
+.top .right{
+	width:470px;
+	height:100%;
+	float: right;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.top .right>a,.right>span>a{
+	color: #fff;
+	font-size:14px;
+}
+#login{
+	margin-right:5px;
+}
+.wrapper_nav{
+	height: 51px;
+	width:100%;
+	border-bottom: 1px solid #eee;
+    background-color: #fff;
+}
+.nav{
+	height:51px;
+	padding-bottom:5px;
+	margin-top:25px;
+	
+}
+.l_icon{
+	display: flex;
+	align-items: center;
+	float: left;
+	height: 51px;
+	width:220px;
+}
+.c_nav{
+	width:310px;
+	height:51px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	font-size:18px;
+	float: left;
+	margin-left:;
+}
+.r_seach{
+	height: 51px;
+	width:340px;
+	display: flex;
+	align-items: center;
+	line-height:51px;
+	float: right;
+}
+.txt{
+	width:280px;
+	height: 32px;
+	border-top: 0;
+	border-right:0;
+	border-left:0;
+	border-bottom:1px solid #ededed;
+	outline: none;
+	box-sizing: border-box;
+	padding-left:36px;
+}
+.form{
+	position: relative;
+}
+.icon-fdj{
+	position: absolute;
+	left:3px;
+	top:2px;
+	font-weight:900;
+}
+.icon-gwc{
+	width:30px;
+	height: 34px;
+	float: right;
+	font-size:25px;
+}
+.gwc_num{
+	position: absolute;
+	top:6px;
+	right: 0;
+	width: 18px;
+	height: 16px;
+	background: #c00000;
+	font-size: 10px;
+	color:#ccc;
+	border-radius:7px;
+	display: none;
+}
+.main_top{
+	width: 85px;
+	height: 14px;
+	display: flex;
+	justify-content: space-around;
+	font-size:12px;
+}
+.m_parent{
+	margin-top: 32px;
+}
+.guc{
+	color: #999;
+}
+.main_list{
+	height: 42px;
+	background: #fafafa;
+	margin-top:32px;
+	line-height:42px;
+}
+.circle{
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	background: #fff;
+	border:2px solid #ccc;
+	border-radius: 50px;
+	box-sizing: border-box;
+	margin-top: 9px;
+	margin-left: 6px;
+	float: left;
+}
+
+.main_list span{
+	float: left;
+	margin:0 32px;
+	color: #999999;
+}
+.main_list span:nth-child(3){
+	margin-left:68px;
+}
+.main_list span:nth-child(4){
+	margin-left:236px;
+}
+.main_list span:nth-child(5){
+	margin-left:144px;
+}
+.main_list span:nth-child(6){
+	margin-left:147px;
+}
+.main_list span:nth-child(7){
+	margin-left:68px;
+}
+.merchant_info{
+	height: 52px;
+	line-height:52px;
+	margin-top: 34px;
+	border-bottom: 1px solid #f3f3f3;
+}
+.merchant_info>p>span{
+	float: left;
+	margin-left: 30px;
+}
+.circle2{
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	background: #fff;
+	border:2px solid #ccc;
+	border-radius: 50px;
+	box-sizing: border-box;
+	float: left;
+	margin-top: 15px;
+	margin-left:8px;
+}
+.merchant_reduce_top{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.item_label{
+	display: inline-block;
+	background: #000;
+	width: 34px;
+	height: 20px;
+	background: #c00000;
+	color: #fff;
+	text-align: center;
+	line-height:20px;
+	margin-right:10px;
+}
+.yua,.y,.yu{
+	color: #999;
+}
+.zgg{
+	color: #c00000;
+	margin-left:20px;
+	font-weight: 900;
+}
+.cart_good_items{
+	height: 123px;
+	border-bottom:1px solid #ccc ;
+}
+.circle3{
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	background: #fff;
+	border:2px solid #ccc;
+	border-radius: 50px;
+	box-sizing: border-box;
+	float: left;
+	margin-top: 52px;
+	margin-left:8px;
+}
+.cart_img{
+	width: 120px;
+	height: 120px;
+	margin-left:10px;
+}
+.price{
+	margin-left: 188px;
+	font-weight: 900;
+	margin-right: 115px;
+}
+.minus{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	border:1px solid #ccc;
+	text-align: center;
+	line-height:30px;
+	font-size:12px;
+}
+.text{
+	display: inline-block;
+	width: 72px;
+	height: 30px;
+	border:1px solid #ccc;
+	line-height:30px;
+	font-size:12px;
+	text-align: center;
+}
+.money{
+	color: #c51f1f;
+	font-weight:900;
+	margin-left: 128px;
+	margin-right: 85px;
+}
+.erro{
+	font-size:14px;
+	color: #ccc;
+	font-weight: 900;
+	cursor: pointer;
+}
+.cart_good_buttom{
+	height: 80px;
+	background: #fafafa;
+	margin-top:100px;
+	line-height:80px;
+	font-size:18px;
+}
+.cart_left{
+	float: left;
+	
+}
+.cart_right{
+	float: right;
+	margin-right: 56px;
+}
+.cart_left span{
+	float: left;
+	margin:0 9px;
+}
+.circle4{
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	background: #fff;
+	border:2px solid #ccc;
+	border-radius: 50px;
+	box-sizing: border-box;
+	float: left;
+	margin-top:30px;
+	margin-left:8px;
+}
+.checkout{
+	float: right;
+	width: 200px;
+	height: 80px;
+	text-align: center;
+	line-height:80px;
+	background: #a9010d;
+	color: #fff;
+	cursor: pointer;
+}
+.after_prefer{
+	color: #c00000;
+}
+	</style>
+	</head>
+	<body>
+		<!--顶部-->
+		<div class="warpper-top">
+			<div class="top content">
+				<div class="right">
+					<span><a href="login.html" id="login">登录</a><a href="register.html" id="register">注册</a></span>
+					<a href="#">帮助中心 </a><a href="#"> | </a>
+					<a href="#"><i class="iconfont icon-sj"></i>下载app  </a> <a href="#">|</a>
+					<span><a href="#">资质证照/</a><a href="#">协议规则</a></span>
+					<i class="iconfont icon-xjt"></i>
+				</div>
+			</div>
+		</div>
+		<div class="wrapper_nav">
+			<div class="nav content">
+				<div class="l_icon">
+					<img src="images/icon.ico"/><h2>小米有品</h2>
+				</div>
+				<div class="c_nav">
+					<a href="#">年度盘点</a>    
+					<a href="#">星品驾到</a>    
+					<a href="#">限时抢购</a>
+				</div>
+				<div class="r_seach">
+					<form class="form">
+					<i class="iconfont icon-fdj"></i><input type="text" placeholder="搜一搜"  class="txt"/>
+					<i href="#" class="iconfont icon-gwc"></i>
+					<span class="gwc_num">
+						<span style="position: absolute;right:6px; top:-17px;color: #fff;">5</span>
+					</span>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!--主体内容区-->
+		<div class="m_parent content">
+			<p class="main_top>
+				<a href="#">首页</a>
+				<span>></span>
+				<span class="guc">购物车</span>
+			</p>
+		</div>
+		<div class="main_list content">
+			<a href="#" class="circle"></a>
+			<span>全选</span>
+			<span>商品信息</span>
+			<span>单价</span>
+			<span>数量</span>
+			<span>金额</span>
+			<span>操作</span>
+		</div>
+		<div class="merchant_info content">
+			<p><a href="#" class="circle2"></a><span>有品满减活动</span></p>
+		</div>
+		<div class="merchant_reduce_top content">
+			<span class="item_label">满减</span>
+			<span class="y">已满</span>
+			<span>399</span>
+			<span class="yu">元,可减</span>
+			<span>80</span>
+			<span class="yua">元</span>
+			<span class="zgg">再逛逛></span>
+		</div>
+		<div class="cart_good_items content">
+			<a href="#" class="circle3"></a>
+			<img src="images/shoppingCar/m.jpg" class="cart_img"/>
+			<span>优点智能锁 M2 深紫灰</span>
+			<span class="price">￥1949</span>
+			<a href="#" class="minus" id="minu">-</a>
+			<span class="text" id="txt">1</span>
+			<a href="#" class="minus" id="plus">+</a>
+			<span class="money">￥1869</span>
+			<span class="erro">×</span>
+		</div>
+		<div class="cart_good_buttom content">
+			<div class="cart_left">
+				<a href="#" class="circle4"></a>
+				<span>全选</span>
+				<span>已选0件</span>
+			</div>
+			<div class="checkout">
+				去结算
+			</div>
+			<div class="cart_right">
+				<span class="total">合计：</span>
+				<span class="after_prefer">￥0.00</span>
+			</div>
+		</div>
+	<script src="../../jquery-1.9.1.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$(".gwc_num p").html(8)
+			if($(".gwc_num").text()>=1){
+				$(".gwc_num").css("display","block")
+			}else{
+				$(".gwc_num").css("display","none")
+			};
+			var index=1;
+			$("#plus").click(function(){
+				index++;
+				$("#txt").html(index);
+			});
+			$("#minu").click(function(){
+				if(index==1){
+					index=1;
+				}else{
+					index--;
+				}
+				$("#txt").html(index);
+				console.log(index)
+			});
+			
+		})
+		
+		
+		
+	</script>
+	</body>
+</html>

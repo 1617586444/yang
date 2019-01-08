@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>小米有品</title>
+		<link rel="SHORTCUT ICON" href="images/icon.ico"/>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/michild.css"/>
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+	</head>
+	<body>
+		<!--顶部-->
+		<div class="warpper-top">
+			<div class="top content">
+				<div class="right">
+					<span><a href="login.html" id="login">登录</a><a href="register.html" id="register">注册</a></span>
+					<a href="#">帮助中心 </a><a href="#"> | </a>
+					<a href="#"><i class="iconfont icon-sj"></i>下载app  </a> <a href="#">|</a>
+					<span><a href="#">资质证照/</a><a href="#">协议规则</a></span>
+					<i class="iconfont icon-xjt"></i>
+				</div>
+			</div>
+		</div>
+		<div class="warpper_nav">
+			<div class="nav content">
+				<div class="l_icon">
+					<img src="images/icon.ico"/><h2>小米有品</h2>
+				</div>
+				<div class="c_nav">
+					<a href="#">年度盘点</a>    
+					<a href="#">星品驾到</a>    
+					<a href="#">限时抢购</a>
+				</div>
+				<div class="r_seach">
+					<form class="form">
+					<i class="iconfont icon-fdj"></i><input type="text" placeholder="搜一搜"  class="txt"/>
+					<a href="#" class="iconfont icon-gwc"></a>
+					<span class="gwc_num">
+						<span class="gwc_num_min">2</span>
+					</span>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!--详情页面-->
+		<div class="main_info content">
+			<div class="left_img">
+				<div class="big_img">
+					<img src="images/img/img5.jpg"/>
+				</div>
+				<div class="min_img">
+					<ul>
+						<li><img src="images/img/img5.jpg"/></li>
+						<li><img src="images/img/img6.jpg"/></li>
+						<li><img src="images/img/img7.jpg"/></li>
+						<li><img src="images/img/img8.jpg"/></li>
+				</ul>
+				</div>
+			</div>
+			<div class="right_info">
+				<div class="top_info">
+					<h2>ULEEMARK 男士水墨印花羽绒马甲 水墨绿 M <span class="xsg">限时购</span></h2>
+					<p class="info_p">ULEEMARK 男士水墨印花羽绒马甲 水墨绿 M</p>
+					<p class="info_bom"><span class="cx">促销：</span><span class="mj">满减</span>元旦特惠满299减50;满399减80</p>
+				</div>
+				<div class="card">
+					<div class="price_line">
+						<div class="price_title">售价</div>
+						<div class="price_right">
+							<span class="menoy">¥</span>
+							<span class="value">169</span>
+							<span class="market">¥249</span>
+							<span class="sale_tag">直降30元</span>
+						</div>
+					</div>
+						<span class="ser_txt">服务</span>
+						<ul class="ser_xinxi">
+							<li>本产品为有品第三方商品</li>
+							<li>由 佑旅优品（杭州）科技有限公司 发货并提供售后</li>
+							<li>支持7天无理由退货（请参考商品详情-常见问题）</li>
+						</ul>
+				</div>
+				<div class="size">
+					<h2>颜色</h2>
+					<div class="size_contains">
+						<ul id="ulColor">
+							<li>冰白+玄冰</li>
+							<li>冰白+樱花粉</li>
+							<li>炫黑+宝石红</li>
+						</ul>
+					</div>
+					<div>
+						<div class="size_contains2">
+							<h2>尺码</h2>
+							<ul id="size">
+								<li>S</li>
+								<li>M</li>
+								<li>L</li>
+								<li>xL</li>
+							</ul>
+						</div>
+					</div>
+					<div class="count_line">
+						<h2>数量</h2>
+						<a href="#" class="minus_btn">-</a><input type="text" value="1" class="input_txt"/><a href="#" class="plus_btn">+</a>
+					</div>
+				</div>
+			<div class="btn_line">
+				<a href="#" class="brown_stroke">立即购买</a>
+				<a href="#" class="btn_brown">加入购物车</a>
+				<div class="collect">
+					收藏
+				</div>
+				<div class="service">
+					客服
+				</div>
+			</div>
+			</div> 
+		</div>
+		<div class="success">
+			加入购物车成功
+		</div>
+	</body>
+</html>
+<script src="../../jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$(function(){
+			$(".min_img ul li").click(function(){
+				var $index=$(this).index("li");
+				$(".big_img").html("<img src='images/img/img"+($index+5)+".jpg'/>");
+				$(this).addClass("be").siblings().removeClass();
+			});
+			$("#ulColor>li").click(function(){
+				$(this).css("background","#845f3f").siblings().css("background","#fff");
+			});
+			$("#size>li").click(function(){
+				$(this).css("background","#845f3f").siblings().css("background","#fff");
+			});
+			var index=1;
+			$(".plus_btn").click(function(){
+				index++;
+				$(".input_txt").val(index);
+			});
+			$(".minus_btn").click(function(){
+				if(index==1){
+					index=1;
+				}else{
+					index--;
+				}
+				$(".input_txt").val(index);
+				console.log(index)
+			});
+			var numIndex=2;
+			$(".btn_brown").click(function(){
+				numIndex++;	
+				$(".gwc_num_min").html(numIndex)		
+				$(".success").css("display","block");
+				setTimeout(function(){
+				$(".success").css("display","none");
+				},3000)
+				show();
+			});
+			$(".icon-gwc").click(function(){
+				location.href="shopCar.html"
+			});
+			show();
+			function show(){
+				if($(".gwc_num").text()>=1){
+					$(".gwc_num").css("display","block")
+				}else{
+					$(".gwc_num").css("display","none")
+				}
+			}
+			$(".brown_stroke").click(function(){
+				alert("您的余额不足")
+			})
+	})
+		
+	
+	
+	
+</script>

@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+
+    body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font:12px "宋体", "Arial Narrow", HELVETICA;
+	background: #fff;
+	color:#000;
+}
+a {
+	color: #6c6c6c;
+	text-decoration: none;
+}
+a:hover {
+	color: #cd0200;
+	
+}
+em {
+	font-style: normal;
+}
+li {
+	list-style: none;
+}
+img {
+	border: 0;
+	vertical-align: middle;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*css重置样式*/
